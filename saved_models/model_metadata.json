@@ -1,0 +1,52 @@
+{
+  "model_type": "Weighted Ensemble (RF + GB + XGBoost)",
+  "n_features": 30,
+  "feature_names": [
+    "Rainfall_mm",
+    "WaterLevel_m",
+    "SoilMoisture_pct",
+    "Elevation_m",
+    "Rainfall_mm_lag1",
+    "Rainfall_mm_lag3",
+    "Rainfall_mm_lag7",
+    "WaterLevel_m_lag1",
+    "WaterLevel_m_lag3",
+    "WaterLevel_m_lag7",
+    "SoilMoisture_pct_lag1",
+    "SoilMoisture_pct_lag3",
+    "SoilMoisture_pct_lag7",
+    "Rainfall_mm_rolling_mean_3d",
+    "Rainfall_mm_rolling_sum_3d",
+    "Rainfall_mm_rolling_mean_7d",
+    "Rainfall_mm_rolling_sum_7d",
+    "WaterLevel_m_rolling_mean_3d",
+    "WaterLevel_m_rolling_sum_3d",
+    "WaterLevel_m_rolling_mean_7d",
+    "WaterLevel_m_rolling_sum_7d",
+    "Day_of_Year",
+    "Month",
+    "Quarter",
+    "Week_of_Year",
+    "Day_of_Week",
+    "Is_Weekend",
+    "Location_Marikina",
+    "Location_Pasig",
+    "Location_Quezon City"
+  ],
+  "best_threshold": 0.21000000000000002,
+  "test_performance": {
+    "accuracy": 0.9890610756608933,
+    "precision": 0.625,
+    "recall": 1.0,
+    "f1": 0.7692307692307693,
+    "roc_auc": 0.9948932219127204,
+    "brier": 0.008788889977878288
+  },
+  "training_date": "2025-12-03T15:47:46.102077",
+  "ensemble_weights": {
+    "rf": 0.4,
+    "gb": 0.3,
+    "xgb": 0.3
+  },
+  "training_approach": "Combined Train+Val with SMOTE 0.9"
+}
